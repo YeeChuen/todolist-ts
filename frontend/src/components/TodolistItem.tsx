@@ -12,6 +12,7 @@ const TodolistItem = (props: any) => {
       ) : (
         <span>{item.content}</span>
       )}
+      <span style={{fontSize: "small"}}>by user {item.userId}</span>
       <div className="todo-action">
         <button onClick={() => handleEdit(item.id)}>
           {editId === item.id ? "save" : "edit"}

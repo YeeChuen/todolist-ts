@@ -41,6 +41,9 @@ export const todolistSlice = createSlice({
       state.todolist = [];
     },
   },
+  // extraReducers: (builder) => {
+  //     builder.addCase()
+  // },
 });
 
 export const { setTodos, addTodo, removeTodo, editTodo, removeAllTodos } =
